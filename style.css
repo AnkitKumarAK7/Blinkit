@@ -5,11 +5,11 @@
 
 #search_bar{
     border-radius: 10px !important;
-}
+} 
 
-#search_bar>input{
-    width:4vw;
-    border:non;
+#search_bar > input{
+    width:40vw;
+    border: none;
     padding:10px; 
     background-color: transparent;
 }
@@ -42,7 +42,7 @@
 .my-card{
     width: 180px;
     margin-right: 20px;
-    display:inline-block !important
+    display:inline-block !important;
 }
 
 .my-card>img{
@@ -74,5 +74,89 @@
 
 .product_price{
     margin: 0;
-    padding: 0 !important
+    padding: 0 !important;
+}
+
+footer{
+    width:85vw;
+    margin: auto;
+}
+
+#footer_r2{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#downloads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer_r2>p{
+    width: 40%;
+}
+
+@media screen and (max-width: 500px){
+    #hero-section{
+        display: none;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    #delivery-div{
+        border: non !important;
+    }
+
+    #search_bar{
+        display: flex;
+        align-items: cneter;
+    }
+
+    #search_bar>input{
+        width: 80vw;
+    }
+    .scrollable_div{
+        margin-top: 50px;
+    }
+
+    #footer_r3{
+        width: 90%;
+        text-align: justify;
+    }
+
+    #footer_r2{
+        flex-direction: column;
+    }
+
+    #footer_r2>p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    #social-icons{
+        margin-top: 20px;
+         
+    }
 }
